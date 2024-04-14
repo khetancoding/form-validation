@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form Validation
+            </title>
+        </head>
+        <body>
+            <h1> Form Validation
+                </h1>
+                <form onsubmit="return hi()">
+                    first name
+                    <input type="text" id="a">
+                    <br>
+                    <br>
+                    Last name
+                    <input type="text" id="b">
+                    <br>
+                    <br>
+                    Email address
+                    <input type="email">
+                    <br>
+                    <br>
+                    password
+                    <input type="password" id="i">
+                    <br>
+                    <br>
+                    Confirm Password
+                    <input type="password" id="o">
+                    <br>
+                    <br>
+                    <input type="reset">
+                    <br>
+                    <br>
+                    log-in
+                    <br>
+                    <input type="submit">
+                    <input type="submit" value="submit1">
+                    </form>
+                    <script>
+                        function func(){
+                        var vari=document.getElementById("a").value; 
+                        var irav=document.getElementById("b").value;
+if(vari==""&&irav==""){
+alert("first name and last name must be filled");
+}
+                        }
+                        function hi(){
+                        var varo=document.getElementById("i").value;
+                        var orav=document.getElementById("o").value;
+                        if(varo==orav){
+                        alert("passwordmatches");
+                        }
+                        else{
+                        alert("passworddoesnotmatch")
+                        }
+                        }
+                        </script>
+        </body>
+    </html>
